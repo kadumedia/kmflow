@@ -1,0 +1,10 @@
+<div>
+  <h3>Su pago de ha realizado exitosamente</h3>
+  <ul>
+    <li>Orden de compra: <%= @flow['kpf_orden'] %></li>
+    <li>Descripción: <%= @flow['kpf_concepto'] %></li>
+    <li>Monto: <%= number_to_currency @flow['kpf_monto'] %></li>
+  </ul>
+  <hr>
+  <%= link_to 'Volver al inicio', root_path %>
+</div>

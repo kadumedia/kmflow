@@ -1,0 +1,45 @@
+default: &default
+  # Tu correo de registro en flow.cl
+  email_tienda : correo@tienda.cl
+
+  # Ruta de la llave pública descargada desde flow.cl
+  key_publica : flow_keys/
+
+  # Modo de acceso a webpay, valores posibles:
+  ### - Mostrar pasarela flow : f
+  ### - Ingresar directamente a webpay : d
+  tipo_pago : d
+
+  # Medio de pago, valores posibles:
+  ### - Solo Webpay : 1
+  ### - Solo Servipag : 2
+  ### - Todos los medios de pago : 9
+  medio_pago : 1
+
+  # Rutas por defecto
+  ### Se pueden cambiar, pero deberás agregarlas manualmente a tu archivo config/routes.rb
+  url_exito : /flow/exito
+  url_fracaso : /flow/fracaso
+  url_confirmacion : /flow/confirma
+
+development:
+  <<: *default
+  # La URL de tu sitio en modo desarrollo, por default localhost
+  url : http://localhost:3000
+
+  # Ruta de tu llave privada de comercio en desarrollo
+  key_privada : flow_keys/
+
+  # Formulario de desarrollo de Flow
+  url_form : http://flow.tuxpan.com/app/kpf/pago.php
+
+production:
+  <<: *default
+  # La URL de tu sitio en modo producción
+  url : http://misitio.cl
+
+  # Ruta de tu llave privada de comercio en producción
+  key_privada : flow_keys/
+
+  # Formulario de desarrollo de Flow
+  url_form : https://www.flow.cl/app/kpf/pago.php
