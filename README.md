@@ -23,7 +23,7 @@ bundle install
 
 2 - Busca el archivo en `RAILS_ROOT\config\kmflow.yml` y llenalo con tus datos de www.flow.cl
 
-3 - Crea la carpeta `RAILS_ROOT\flow_keys` y guarda tus llaves descargadas desde tu cuenta y agrega las rutas en el config
+3 - Crea la carpeta `RAILS_ROOT\flow_keys`, guarda tus llaves descargadas desde tu cuenta y agrega las rutas en el config
 
 ##### Generadores
 Puedes copiar el controlador en tu proyecto, así puedes agregar tu código para guardar los datos en tu base de datos, solo ejecuta en consola:
