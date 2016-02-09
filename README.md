@@ -4,7 +4,7 @@ Gema para integrar los pagos de Flow.cl en un proyecto en Ruby on Rails
 ## Instalación
 Modo directo:
 ```ruby
-$ gem install kmflow
+gem install kmflow
 ```
 También puedes agregar la linea a tu Gemfile:
 
