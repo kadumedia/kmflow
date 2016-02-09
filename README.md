@@ -1,4 +1,4 @@
-# kmFlow Pagos
+# kmFlow Pagos [![Gem Version](https://badge.fury.io/rb/kmflow.svg)](https://badge.fury.io/rb/kmflow)
 Gema para integrar los pagos de Flow.cl en un proyecto en Ruby on Rails
 
 ## Instalación
