@@ -54,6 +54,6 @@ Nota: se creará un formulario con clase `.flow-form` para que puedas darle esti
 ##### Opcional
 Al código del botón puedes agregar los siguientes parámetros opcionales:
 ```ruby
-class: 'miClase'    # Sobre-escribe la clase del formulario
-boton: 'Pagar'      # Sobre-escribe el texto del botón de pago, por defecto muestra 'Pagar con Webpay/Servipag/Flow'
+class: 'miClase'    # Sobrescribe la clase del formulario
+boton: 'Pagar'      # Sobrescribe el texto del botón, por defecto es 'Pagar con Webpay/Servipag/Flow'
 ```
